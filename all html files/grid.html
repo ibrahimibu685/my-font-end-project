@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            color:#fff;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,minmax(100px,auto));
+            max-width:960px;
+            margin:0 auto;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+        .content>div{
+            background:#3bbced;
+            padding:30px;
+        
+        }
+        .content>div:nth-child(even){
+            background: #777;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div>1 </div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>

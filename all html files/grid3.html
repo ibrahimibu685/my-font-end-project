@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            color:#fff;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(4,minmax(100px,auto));
+            max-width:1000px;
+            margin:0 auto;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+        .content>div{
+            background:#3bbced;
+            padding:30px;
+        
+        }
+        .content>div:nth-child(even){
+            background: #777;
+        }
+        
+        .content1{
+            grid-column: span 6 ;
+        }
+        .content2{
+            grid-column: span 3;
+        }
+        .content3{
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+        .content6{
+            grid-row: 4;
+            grid-column: span 6;
+        }
+        .content4{
+            grid-column: span 2;
+        }
+        .content5{
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        .nested{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows:repeat(3,1fr);
+            grid-gap: 5px;      
+        }
+        .nested p{
+            border: 1px solid white;
+            margin: 0;
+            padding: 20px;
+        }
+        .p1{
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="content1">
+            <div class="nested">
+                <p class="p1">1</p>
+                <p class="p2">2</p>
+                <p class="p3">3</p>
+               
+            </div>
+        </div>
+        <div class="content2">2</div>
+        <div class="content3">3</div>
+        <div class="content4">4</div>
+        <div class="content5">5</div>
+        <div class="content6">6</div>
+    </div>
+</body>
+</html>
