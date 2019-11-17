@@ -1,0 +1,10 @@
+body{
+    background-color: #BB398A;
+}
+.container{
+    margin: auto;
+
+}
+.container *{
+    background-color: #FFBF04;
+}

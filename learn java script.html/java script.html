@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    h1{
+        font-size: 35px;
+        color:rgb(5, 121, 25);
+        text-shadow: 2px 2px 10px black,5px 2px 10px black,5px 2px 10px black,5px 2px 10px black;
+    }
+    
+    </style>
+</head>
+<body>
+     <h1>Now we are going to learn java script</h1>
+     <div>
+     <script>
+     function monstar(name, color, height,weight){
+         this.name =name;
+         this.skin_color = color;
+         this.body_height = height;
+         this.body_weight = weight;
+     }
+     var dark_rino = new monstar("dark rino","black","9 feet","6000kg");
+     var red_rino =new monstar("red rino","red","7feet","4000kg");
+
+
+     document.write
+     (dark_rino.skin_color);
+     document.write(red_rino.body_height);
+
+    
+    var x= red_rino.body_weight;
+    document.write(x);
+
+    function hero(color,height,weight,hcolor,ecolor,ccolor,age) {
+        this.body_color = color;
+        this.body_height=height;
+        this.body_weight=weight;
+        this.hair_color=hcolor;
+        this.eye_color=ecolor;
+        this.costum_color=ccolor;
+        this.change_height= function(height){this.body_height=height;}
+        this.hero_age=age;
+        this.year_of_birth= function(age){
+            return 2019 -age;
+        }
+    }
+    
+    var spider_man =new hero("fair","5.10 feet","69 kg","blonde","black","red and black and white",30);
+
+    document.write(spider_man.body_height)
+    spider_man.change_height("5 feet 4 inch");
+    document.write(spider_man.year_of_birth(21));
+
+</script>
+<script>
+ function person(name,age) {
+      this.person_name;
+      this.person_age;
+      this.born_year= function(age){
+          return 2019 - age} 
+      }
+
+var your_born_year= new person("ibrahim",21);
+document.write(your_born_year.born_year(21));
+
+function year(age){
+    return 2019-age;
+}
+var x=year(26);
+document.write(x)
+
+
+ 
+ </script>
+</body>
+</html>
