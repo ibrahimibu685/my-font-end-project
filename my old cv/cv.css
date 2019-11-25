@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(6,minmax(20px,auto));
+    grid-template-rows: repeat(9,minmax(50px,auto));
+    background-color: gray;
+    border: 1px solid gray;
+    padding: 2px;
+}
+.container *{
+    background-color: green;
+    text-align: center;
+}
+header{
+    grid-column: span 6;
+}
+nav{
+    grid-column: span 2;
+    grid-row: span 8;
+}
+article{
+    grid-column: span 3;
+    grid-row: span 7;
+
+}
+aside{
+    grid-row: span 7;
+}
+footer{
+    grid-column: span 4;
+}

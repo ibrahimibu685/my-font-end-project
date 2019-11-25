@@ -1,0 +1,26 @@
+h1{
+    color:green;
+}
+h2{
+    color:blue;    
+}
+h3{
+    color:black;
+}
+p{
+    color: red;
+}
+body{
+    background-color:white;
+    box-shadow: 5px 5px 3px rgb(129, 123, 123),-5px -5px 3px rgb(216, 203, 203);
+}
+div{
+    padding:1px 30px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 5px 5px 3px rgb(129, 123, 123),-5px -5px 3px rgb(216, 203, 203);
+    margin-bottom: 20px;
+    background-color:rgb(226, 210, 210);
+  
+}
+
